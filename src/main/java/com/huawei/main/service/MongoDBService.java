@@ -8,6 +8,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
@@ -17,6 +18,7 @@ import java.util.regex.Pattern;
  * @Author jacob peng
  * @Date 2020/1/14
  **/
+@Service
 public class MongoDBService {
     private static final Logger logger = LoggerFactory.getLogger(MongoDBService.class);
 

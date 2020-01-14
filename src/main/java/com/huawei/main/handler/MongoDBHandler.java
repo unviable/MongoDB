@@ -3,10 +3,7 @@ package com.huawei.main.handler;
 import com.huawei.main.pojo.Book;
 import com.huawei.main.service.MongoDBService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -14,6 +11,7 @@ import java.util.List;
  * @Author jacob peng
  * @Date 2020/1/14
  **/
+@RestController
 public class MongoDBHandler {
     @Autowired
     private MongoDBService mongoDbService;
